@@ -17,11 +17,12 @@ class App extends Component {
 
   componentDidMount() {
     Tabletop.init({
-      key: '1c_b6jA-wJsEGmELpZN9mVo4wrBxVo5q18-u5Xo49n1w',
+      key: '1JLFK9hiizH_IkT1taevof1SP1vDFPyIstvi7JBms0a8',
       callback: googleData => {
         this.setState({ 
           data :  googleData,     
         });
+        console.log(googleData);
       },
       simpleSheet: true
     })
@@ -30,6 +31,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <h1>Teste 123</h1>
         <header className="App-header">
           <table>
             <thead>
